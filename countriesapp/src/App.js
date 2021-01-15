@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { Switch, Route,BrowserRouter as Router } from 'react-router-dom';
 import CountriesList from './components/CountriesList';
+import CountryDetails from './components/CountryDetails';
 import './App.css';
 
 function App() {
@@ -10,7 +11,12 @@ function App() {
         <div className="appTitle">Where in the world?</div>
         <div className="themeChangeButton">Dark Mode</div>
       </div>
-      <CountriesList />
+      <Router>
+        <Switch>
+          <Route exact path='/' component={CountriesList} />
+          <Route path='/:country' component={CountryDetails} />
+        </Switch>
+      </Router>
     </div>
   );
 }
