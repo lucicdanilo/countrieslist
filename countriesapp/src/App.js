@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import CountriesList from './components/CountriesList';
+import './App.css';
 
 function App() {
 
   return(
-    <div>
-      <div>
-        <div>Where in the world?</div>
-        <button>Dark Mode</button>
+    <div className="App">
+      <div className="homepageHeader">
+        <div className="appTitle">Where in the world?</div>
+        <div className="themeChangeButton">Dark Mode</div>
       </div>
       <CountriesList />
     </div>

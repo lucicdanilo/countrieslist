@@ -3,6 +3,7 @@ import CountryCard from '../components/CountryCard';
 import axios from 'axios';
 
 function CountriesList() {
+
     const [ countries, setCountries ] = useState([]);
     const [ search, setSearch ] = useState('');
     const [ filter, setFilter ] = useState('');
@@ -25,11 +26,13 @@ function CountriesList() {
         return country.region.includes(filter)
       })
 
-      const countriesFinal = searchingCountries.filter(element => filterCountries.includes(element))
+      // List of countries that match data from search bar and filter menu
+      const countriesList = searchingCountries.filter(element => filterCountries.includes(element))
     
       return (
         <div>
             <input type="text" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
+            <br />
             <select onChange={ e => setFilter(e.target.value) }>
                 <option value="" default>Filter By Region</option>
                 <option value="Africa">Africa</option>
@@ -39,15 +42,15 @@ function CountriesList() {
                 <option value="Oceania">Oceania</option>
             </select>
             <div>
-            {countriesFinal.map(item => (
-                <CountryCard 
-                    flag={item.flag} 
-                    name={item.name} 
-                    population={item.population} 
-                    region={item.region} 
-                    capital={item.capital}
-                />
-            ))}
+                {countriesList.map(item => (
+                    <CountryCard 
+                        flag={item.flag} 
+                        name={item.name} 
+                        population={item.population} 
+                        region={item.region} 
+                        capital={item.capital}
+                    />
+                ))}
             </div>
         </div>
     );

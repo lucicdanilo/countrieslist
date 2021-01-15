@@ -1,12 +1,12 @@
 function CountryCard(props) {
     return(
-        <div>
-            <div>{props.flag}</div>
-            <div>{props.name}</div>
+        <div className="countryCard"> 
+            <div><img className="countryFlagImg" src={props.flag} /></div>
+            <div className="countryName">{props.name}</div>
             <div>
-                <div>Population: {props.population}</div>
-                <div>Region: {props.region}</div>
-                <div>Capital: {props.capital}</div>
+                <div className="cardInfo"><span className="bold">Population:</span> {props.population}</div>
+                <div className="cardInfo"><span className="bold">Region:</span> {props.region}</div>
+                <div className="cardInfo"><span className="bold">Capital:</span> {props.capital}</div>
             </div>
         </div>
     )
