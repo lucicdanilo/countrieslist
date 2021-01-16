@@ -8,7 +8,22 @@ body{
 }
 
 .homepageHeader{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 94%;
     padding: 6% 3%;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.countriesList{
+    margin-top: 22%;
+}
+
+.countryDetails{
+    margin-top: 22%;
 }
 
 .appTitle{
@@ -17,6 +32,9 @@ body{
 }
 
 .themeChangeButton{
+    width: max-content;
+    position: inherit;
+    right: 10%;
     font-weight: 600;
     display: inline;
 }
@@ -51,7 +69,7 @@ body{
 }
 
 .countryFlagImgDetails{
-    width: 80%;
+    width: 100%;
 }
 
 .countryNameDetails{
@@ -66,4 +84,35 @@ body{
 
 .groupDetails > div{
     padding: 1.4% 0%;
+}
+
+.backButton{
+    background-color: white;
+    margin: 10% 0%;
+    padding: 1% 5%;
+    width: fit-content;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.borderCountries{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.borderCountry{
+    display: table;
+    background-color: white;
+    margin: 2%;
+    padding: 1% 4%;
+    width: fit-content;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.moonIcon{
+    width: 10px;
+    padding: 0% 7%;
 }

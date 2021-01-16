@@ -18,23 +18,24 @@ function CountryDetails(props){
     }, [])
 
 
-    return <div>
-        {details.map(item => (
-            <CountryDetailsList
-                flag={item.flag}
-                name={item.name}
-                nativeName={item.nativeName}
-                population={item.population}
-                region={item.region} 
-                subRegion={item.subregion}
-                capital={item.capital}
-                topLevelDomain={item.topLevelDomain[0]}
-                currencies={item.currencies}
-                languages={item.languages}
-                borderCountries={item.borders}
-            />
-        ))}
-    </div>
+    return (
+        <div className="countryDetails">
+            {details.map(item => (
+                <CountryDetailsList
+                    flag={item.flag}
+                    name={item.name}
+                    nativeName={item.nativeName}
+                    population={item.population}
+                    region={item.region} 
+                    subRegion={item.subregion}
+                    capital={item.capital}
+                    topLevelDomain={item.topLevelDomain[0]}
+                    currencies={item.currencies}
+                    languages={item.languages}
+                    borderCountries={item.borders}
+                />
+            ))}
+        </div>);
 }
 
 export default CountryDetails; 

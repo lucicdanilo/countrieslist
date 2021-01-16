@@ -30,7 +30,7 @@ function CountriesList() {
       const countriesList = searchingCountries.filter(element => filterCountries.includes(element))
     
       return (
-        <div>
+        <div className="countriesList">
           <input type="text" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
           <br />
           <select onChange={ e => setFilter(e.target.value) }>
