@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CountryCard from '../components/CountryCard';
 import axios from 'axios';
+import SearchIcon from '../icons/search.svg';
 
 function CountriesList() {
 
@@ -31,7 +32,12 @@ function CountriesList() {
     
       return (
         <div className="countriesList">
-          <input type="text" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
+
+
+<div className="searchContainer">
+  <img src={SearchIcon} className="searchIcon" />
+  <input className="searchBox" type="search" name="search" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
+</div>
           <br />
           <select onChange={ e => setFilter(e.target.value) }>
             <option value="" default>Filter By Region</option>

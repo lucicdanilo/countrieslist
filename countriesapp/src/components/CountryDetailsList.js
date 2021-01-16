@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import BorderCountry from './BorderCountry';
+import Arrow from '../icons/long-arrow.svg';
 
 function CountryDetailsList(props){
     return (
         <div>
             <Link to='/'>
-                <div className="backButton">Back</div>
+                <div className="backButton">
+                    <img src={Arrow} className="backArrowIcon" />
+                    <div>Back</div>
+                </div>
             </Link>
             <div><img className="countryFlagImg" src={props.flag} /></div>
             <div className="countryNameDetails">{props.name}</div>
