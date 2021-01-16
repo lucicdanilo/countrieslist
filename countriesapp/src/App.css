@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
-body{
+.app{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.lightTheme{
     background-color: hsl(0, 0%, 98%);
     color: hsl(200, 15%, 8%);
-    font-size: 14px;
+}
+
+.darkTheme{
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
 }
 
 .homepageHeader{
@@ -32,7 +44,8 @@ body{
 }
 
 .themeChangeButton{
-    width: auto;
+    white-space: nowrap;
+    width: fit-content;
     position: inherit;
     right: 10%;
     font-weight: 600;
@@ -69,17 +82,18 @@ body{
 }
 
 .countryFlagImgDetails{
-    width: 100%;
+    width: 88%;
+    margin-left: 6%;
 }
 
 .countryNameDetails{
     font-weight: 800;
     font-size: large;
-    margin: 6% 3%;
+    margin: 6%;
 }
 
 .groupDetails{
-    margin: 6% 3%;
+    margin: 6%;
 }
 
 .groupDetails > div{
@@ -89,7 +103,7 @@ body{
 .backButton{
     display: flex;
     background-color: white;
-    margin: 10% 0%;
+    margin: 10% 6%;
     padding: 1% 5%;
     width: fit-content;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -149,7 +163,6 @@ body{
   .searchIcon {
     width: 10px;
     padding: 3%;
-    margin-left: 2%;
     background-color: white;
   }
   

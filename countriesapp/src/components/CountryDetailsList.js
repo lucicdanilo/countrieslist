@@ -11,7 +11,7 @@ function CountryDetailsList(props){
                     <div>Back</div>
                 </div>
             </Link>
-            <div><img className="countryFlagImg" src={props.flag} /></div>
+            <div><img className="countryFlagImgDetails" src={props.flag} /></div>
             <div className="countryNameDetails">{props.name}</div>
             <div className="groupDetails">
                 <div><span className="bold">Native Name:</span> {props.nativeName}</div>

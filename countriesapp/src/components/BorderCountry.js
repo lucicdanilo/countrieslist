@@ -13,7 +13,7 @@ function BorderCountries(props){
 
     return (
         <div className="borderCountry">
-        <div>{borderCountryName}</div>
+            <div>{borderCountryName}</div>
         </div>
     )
 }

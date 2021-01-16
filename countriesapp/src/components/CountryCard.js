@@ -1,4 +1,5 @@
 function CountryCard(props) {
+    
     return(
         <div className="countryCard"> 
             <div><img className="countryFlagImg" src={props.flag} /></div>
