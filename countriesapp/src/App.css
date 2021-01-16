@@ -46,6 +46,24 @@ body{
     margin: 2% 10%;
 }
 
-.cardInfo > .bold{
+.bold{
     font-weight: 600;
+}
+
+.countryFlagImgDetails{
+    width: 80%;
+}
+
+.countryNameDetails{
+    font-weight: 800;
+    font-size: large;
+    margin: 6% 3%;
+}
+
+.groupDetails{
+    margin: 6% 3%;
+}
+
+.groupDetails > div{
+    padding: 1.4% 0%;
 }
