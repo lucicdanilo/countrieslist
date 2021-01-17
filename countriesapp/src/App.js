@@ -4,37 +4,36 @@ import CountriesList from './components/CountriesList';
 import CountryDetails from './components/CountryDetails';
 import './App.css';
 import Moon from './icons/moon-regular.svg';
+import MoonDark from './icons/moon-solid.svg';
 
 function App() {
 
-  const [ theme, setTheme ] = useState(getSavedTheme);
+  const [ darkTheme, setDarkTheme ] = useState(getSavedTheme);
 
   let toggleTheme = () => (
-    setTheme(toggleTheme => !toggleTheme)
+    setDarkTheme(toggleTheme => !toggleTheme)
   )
 
   // Storing theme in local storage..
   useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(theme));
-  },[theme])
+    localStorage.setItem('darkTheme', JSON.stringify(darkTheme));
+  },[darkTheme])
 
   function getSavedTheme(){
-    const savedTheme = JSON.parse(localStorage.getItem('theme'));
+    const savedTheme = JSON.parse(localStorage.getItem('darkTheme'));
     return savedTheme || false;
   }
-
-  console.log(theme);
   
   return(
-    <div className={theme ? "app lightTheme" : "app darkTheme"}>
+    <div className={darkTheme ? "app lightTheme" : "app darkTheme"}>
       <div className="homepageHeader">
         <div className="appTitle">Where in the world?</div>
-        <div className="themeChangeButton" onClick={toggleTheme}><img src={Moon} className="moonIcon"/>Dark Mode</div>
+        <div className="themeChangeButton" onClick={toggleTheme}><img src={darkTheme ? Moon : MoonDark} className="moonIcon"/>Dark Mode</div>
       </div>
       <Router>
         <Switch>
-          <Route exact path='/' component={CountriesList} />
-          <Route path='/:country' component={CountryDetails} />
+          <Route exact path='/'><CountriesList darkTheme={darkTheme} /></Route>
+          <Route path='/:country'><CountryDetails darkTheme={darkTheme} /></Route>
         </Switch>
       </Router>
     </div>

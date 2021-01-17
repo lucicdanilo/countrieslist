@@ -47,19 +47,30 @@
     white-space: nowrap;
     width: fit-content;
     position: inherit;
-    right: 10%;
+    right: 3%;
     font-weight: 600;
     display: inline;
 }
 
 .countryCard{
-    background-color: white;
     border-radius: 5px;
-    margin: 10% 15%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
     padding-bottom: 8%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.lightCard{
+    background-color: white;
+}
+
+.darkCard{
+    color: white;
+    background-color: hsl(209, 23%, 22%);
 }
 
 .countryFlagImg{
@@ -137,14 +148,13 @@
     padding: 0% 7%;
 }
 
-
-
-
-
-
-
-
-
+select{
+    margin-top: 7%;
+    margin-left: 3%;
+    padding: 4% 10% 4% 1%;
+    border-color: white;
+    border-radius: 3px;
+}
 
 .searchContainer {
     display: inline-flex;
@@ -153,7 +163,7 @@
     border: 1px solid white;
     border-radius: 5px;
     overflow: hidden;
-    width: 94%;
+    width: 93%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -161,14 +171,14 @@
   }
   
   .searchIcon {
-    width: 10px;
-    padding: 3%;
+    width: 5%;
+    padding: 2%;
     background-color: white;
   }
   
   .searchBox {
     border: 0;
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding: 3%;
     flex: 1;
   }
   

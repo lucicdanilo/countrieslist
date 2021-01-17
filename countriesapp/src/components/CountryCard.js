@@ -1,7 +1,9 @@
 function CountryCard(props) {
-    
+
+    let darkTheme = props.darkTheme;
+
     return(
-        <div className="countryCard"> 
+        <div className={darkTheme ? "countryCard lightCard" : "countryCard darkCard"}> 
             <div><img className="countryFlagImg" src={props.flag} /></div>
             <div className="countryName">{props.name}</div>
             <div>

@@ -4,7 +4,7 @@ import CountryCard from '../components/CountryCard';
 import axios from 'axios';
 import SearchIcon from '../icons/search.svg';
 
-function CountriesList() {
+function CountriesList(props) {
 
   const [ countries, setCountries ] = useState([]);
   const [ search, setSearch ] = useState('');
@@ -38,7 +38,7 @@ function CountriesList() {
       </div>
       <br />
       <select onChange={ e => setFilter(e.target.value) }>
-        <option value="" default>Filter By Region</option>
+        <option value="" selected disabled hidden>Filter By Region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
         <option value="Asia">Asia</option>
@@ -54,6 +54,7 @@ function CountriesList() {
               population={item.population} 
               region={item.region} 
               capital={item.capital}
+              darkTheme={props.darkTheme}
             />
           </Link>
         ))}

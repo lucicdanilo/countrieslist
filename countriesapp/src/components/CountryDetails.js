@@ -4,10 +4,10 @@ import axios from 'axios';
 
 function CountryDetails(props){
     const [ details, setDetails ] = useState([]);
-
-    let country = props.location.pathname.slice(1);
-    let url = 'https://restcountries.eu/rest/v2/name/' + country + '?fullText=true'
-
+    
+    let country = window.location.href.split('/')[3];
+    let url = 'https://restcountries.eu/rest/v2/name/' + country + '?fullText=true';
+ 
     useEffect(async () => {
         axios({
             method: 'GET',
