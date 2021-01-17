@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 import BorderCountry from './BorderCountry';
 import Arrow from '../icons/long-arrow.svg';
+import ArrowWhite from '../icons/long-arrowWhite.svg';
 
 function CountryDetailsList(props){
     return (
         <div>
-            <Link to='/'>
-                <div className="backButton">
-                    <img src={Arrow} className="backArrowIcon" />
-                    <div>Back</div>
+            <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
+                <div className={props.darkTheme ? "backButton lightTheme" : "backButton darkTheme"}>
+                    <img src={props.darkTheme ? Arrow : ArrowWhite} className="backArrowIcon" />
+                    <div className="backButtonText">Back</div>
                 </div>
             </Link>
             <div><img className="countryFlagImgDetails" src={props.flag} /></div>
@@ -29,7 +30,7 @@ function CountryDetailsList(props){
                 <div className="bold">Border Countries:</div>
                 <div className="borderCountries">
                     {props.borderCountries.map(item => 
-                        <BorderCountry borderCountries={item}></BorderCountry>
+                        <BorderCountry borderCountries={item} darkTheme={props.darkTheme}></BorderCountry>
                     )}
                 </div>
             </div>

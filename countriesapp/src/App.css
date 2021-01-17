@@ -113,7 +113,6 @@
 
 .backButton{
     display: flex;
-    background-color: white;
     margin: 10% 6%;
     padding: 1% 5%;
     width: fit-content;
@@ -122,14 +121,18 @@
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
 }
 
+.backButtonText{
+    padding-left: 5px;
+}
+
 .borderCountries{
+    margin-left: -2%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .borderCountry{
     display: table;
-    background-color: white;
     margin: 2%;
     padding: 1% 4%;
     width: fit-content;
@@ -149,6 +152,7 @@
 }
 
 select{
+    border-width: inherit;
     margin-top: 7%;
     margin-left: 3%;
     padding: 4% 10% 4% 1%;
@@ -156,11 +160,21 @@ select{
     border-radius: 3px;
 }
 
+.selectDark{
+    border-width: inherit;
+    color: white;
+    margin-top: 7%;
+    margin-left: 3%;
+    padding: 4% 10% 4% 1%;
+    border-color: white;
+    border-radius: 3px;
+    background-color: hsl(209, 23%, 22%);
+}
+
 .searchContainer {
     display: inline-flex;
     flex: 1 1 300px;
     position: relative;
-    border: 1px solid white;
     border-radius: 5px;
     overflow: hidden;
     width: 93%;
@@ -170,15 +184,28 @@ select{
     margin: 0% 3%;
   }
   
-  .searchIcon {
+.searchIcon {
     width: 5%;
     padding: 2%;
     background-color: white;
-  }
+}
+
+.searchIconDark{
+    width: 5%;
+    padding: 2%;
+    background-color: hsl(209, 23%, 22%);
+}
   
-  .searchBox {
+.searchBox {
     border: 0;
     padding: 3%;
     flex: 1;
-  }
+}
+
+.searchBoxDark{
+    background-color: hsl(209, 23%, 22%);
+    border: 0;
+    padding: 3%;
+    flex: 1;
+}
   

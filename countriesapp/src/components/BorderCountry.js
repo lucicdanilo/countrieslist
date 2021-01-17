@@ -12,7 +12,7 @@ function BorderCountries(props){
     .then(res => setBorderCountryName(res.name))
 
     return (
-        <div className="borderCountry">
+        <div className={props.darkTheme ? "borderCountry lightTheme" : "borderCountry darkTheme"}>
             <div>{borderCountryName}</div>
         </div>
     )

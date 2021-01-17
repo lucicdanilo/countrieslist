@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'; 
 import { Link } from 'react-router-dom';
 import CountryCard from '../components/CountryCard';
-import axios from 'axios';
 import SearchIcon from '../icons/search.svg';
+import SearchIconDark from '../icons/searchDark.svg';
+import axios from 'axios';
 
 function CountriesList(props) {
 
@@ -33,11 +34,11 @@ function CountriesList(props) {
   return (
     <div className="countriesList">
       <div className="searchContainer">
-        <img src={SearchIcon} className="searchIcon" />
-        <input className="searchBox" type="search" name="search" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
+        <img src={props.darkTheme ? SearchIcon : SearchIconDark} className={props.darkTheme ? "searchIcon" : "searchIconDark"} />
+        <input className={props.darkTheme ? "searchBox" : "searchBoxDark"} type="search" name="search" placeholder="Search for a country..." onChange={ e => setSearch(e.target.value) } />
       </div>
       <br />
-      <select onChange={ e => setFilter(e.target.value) }>
+      <select className={props.darkTheme ? "select" : "selectDark"} onChange={ e => setFilter(e.target.value) }>
         <option value="" selected disabled hidden>Filter By Region</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
@@ -47,7 +48,8 @@ function CountriesList(props) {
       </select>
       <div>
         {countriesList.map(item => (
-          <Link to={item.name.toLowerCase()}>
+          <Link to={item.name.toLowerCase()} 
+                style={{ textDecoration: 'none', color: 'black' }}>
             <CountryCard 
               flag={item.flag} 
               name={item.name} 

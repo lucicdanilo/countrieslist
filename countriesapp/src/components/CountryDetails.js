@@ -33,6 +33,7 @@ function CountryDetails(props){
                     currencies={item.currencies}
                     languages={item.languages}
                     borderCountries={item.borders}
+                    darkTheme={props.darkTheme}
                 />
             ))}
         </div>);
