@@ -46,7 +46,7 @@ function CountriesList(props) {
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>
       </select>
-      <div>
+      <div className="flexDesktop">
         {countriesList.map(item => (
           <Link to={item.name.toLowerCase()} 
                 style={{ textDecoration: 'none', color: 'black' }}>

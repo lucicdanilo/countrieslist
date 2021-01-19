@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
+@media only screen and (max-width: 400px) {
+   
 .app{
     position: absolute;
     top: 0px;
@@ -24,7 +26,7 @@
     top: 0px;
     left: 0px;
     width: 94%;
-    padding: 6% 3%;
+    padding: 8% 3%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -99,12 +101,13 @@
 
 .countryNameDetails{
     font-weight: 800;
-    font-size: large;
-    margin: 6%;
+    font-size: x-large;
+    margin: 8%;
 }
 
 .groupDetails{
-    margin: 6%;
+    margin: 8%;
+    font-size: larger;
 }
 
 .groupDetails > div{
@@ -113,12 +116,12 @@
 
 .backButton{
     display: flex;
-    margin: 10% 6%;
+    margin: 33% 6% 15% 6%;
     padding: 1% 5%;
     width: fit-content;
-    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
-    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
 }
 
 .backButtonText{
@@ -153,11 +156,16 @@
 
 select{
     border-width: inherit;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 3%;
-    padding: 4% 10% 4% 1%;
+    margin-bottom: 2%;
+    padding: 4% 10% 4% 6%;
     border-color: white;
+    background-color: white;
     border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
 }
 
 .selectDark{
@@ -177,16 +185,16 @@ select{
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    width: 93%;
+    width: 94%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
-    margin: 0% 3%;
-  }
+    margin: 6% 3%;
+}
   
 .searchIcon {
     width: 5%;
-    padding: 2%;
+    padding: 2% 7%;
     background-color: white;
 }
 
@@ -198,7 +206,7 @@ select{
   
 .searchBox {
     border: 0;
-    padding: 3%;
+    padding: 5%;
     flex: 1;
 }
 
@@ -209,3 +217,249 @@ select{
     flex: 1;
 }
   
+}
+
+@media only screen and (min-width: 400px) {
+
+.app{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.lightTheme{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+
+.darkTheme{
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+
+.homepageHeader{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 94%;
+    padding: 3%;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.countriesList{
+    margin-top: 5%;
+}
+
+.countryDetails{
+    margin-top: 22%;
+}
+
+.appTitle{
+    font-weight: 800;
+    display: inline;
+}
+
+.themeChangeButton{
+    white-space: nowrap;
+    width: fit-content;
+    position: inherit;
+    right: 3%;
+    font-weight: 600;
+    display: inline;
+}
+
+.countryCard{
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    padding-bottom: 8%;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.lightCard{
+    background-color: white;
+}
+
+.darkCard{
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+}
+
+.countryFlagImg{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.countryName{
+    font-weight: 800;
+    margin: 8% 10%;
+}
+
+.cardInfo{
+    font-weight: 300;
+    margin: 2% 10%;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.countryFlagImgDetails{
+    width: 88%;
+    margin-left: 6%;
+}
+
+.countryNameDetails{
+    font-weight: 800;
+    font-size: x-large;
+    margin: 8%;
+}
+
+.groupDetails{
+    margin: 8%;
+    font-size: larger;
+}
+
+.groupDetails > div{
+    padding: 1.4% 0%;
+}
+
+.backButton{
+    display: flex;
+    margin: 33% 6% 15% 6%;
+    padding: 1% 5%;
+    width: fit-content;
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.1);
+}
+
+.backButtonText{
+    padding-left: 5px;
+}
+
+.borderCountries{
+    margin-left: -2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.borderCountry{
+    display: table;
+    margin: 2%;
+    padding: 1% 4%;
+    width: fit-content;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.moonIcon{
+    width: 10px;
+    padding: 0% 7%;
+}
+
+.backArrowIcon{
+    width: 10px;
+    padding: 0% 7%;
+}
+
+select{
+    position: absolute;
+    right: 5%;
+    border-width: inherit;
+    padding: 1.5% 4% 1.5% 3%;
+    border-color: white;
+    background-color: white;
+    margin-top: -10%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+}
+
+.selectDark{
+    border-width: inherit;
+    color: white;
+    margin-top: 7%;
+    margin-left: 3%;
+    padding: 4% 10% 4% 1%;
+    border-color: white;
+    border-radius: 3px;
+    background-color: hsl(209, 23%, 22%);
+}
+
+.flexDesktop{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.searchContainer {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
+    margin: 6% 3%;
+}
+  
+.searchIcon {
+    width: 5%;
+    padding: 2% 7%;
+    background-color: white;
+}
+
+.searchIconDark{
+    width: 5%;
+    padding: 2%;
+    background-color: hsl(209, 23%, 22%);
+}
+  
+.searchBox {
+    border: 0;
+    padding: 5%;
+    flex: 1;
+}
+
+.searchBoxDark{
+    background-color: hsl(209, 23%, 22%);
+    border: 0;
+    padding: 3%;
+    flex: 1;
+}
+
+
+}
+
+@media only screen and (min-width: 600px){
+    .flexDesktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .flexDesktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+    }
+}
