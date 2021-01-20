@@ -217,7 +217,7 @@ select{
     border: 0;
     padding: 5%;
     flex: 1;
-    color: white;
+    color:white;
 }
   
 }
@@ -460,7 +460,11 @@ select{
     }
 }
 
-@media only screen and (min-width: 800px){   
+@media only screen and (min-width: 800px){
+    .app{
+        height: 100%;
+    }
+    
     .appTitle{
         font-size: x-large;
     }
@@ -497,7 +501,7 @@ select{
 
     .searchBoxDark{
         padding: 5%;
-        color: white;
+        color:white;
     }
 
     .searchIconDark{
