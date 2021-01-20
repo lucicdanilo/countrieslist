@@ -487,7 +487,19 @@ select{
 
     select{
         margin-top: -6%;
+    }
 
+    .selectDark{
+        margin-top: -6%;
+        padding: 1.5% 4% 1.5% 3%;
+    }
+
+    .searchBoxDark{
+        padding: 5%;
+    }
+
+    .searchIconDark{
+        padding: 2% 7%;
     }
 
     .flexDesktop{
