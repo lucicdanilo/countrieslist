@@ -13,5 +13,7 @@ npm install
 Kada se završi instalacija pokrenuti komandu za pokretanje same aplikacije:
 
 ```bash
-npm install 
+npm start
 ```
+
+Aplikacija bi trebalo da se pokrene.
