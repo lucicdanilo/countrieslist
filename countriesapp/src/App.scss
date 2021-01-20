@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
-@media only screen and (max-width: 400px) {
-   
+$whiteBackground: hsl(0, 0%, 98%);
+$darkColor:  hsl(200, 15%, 8%);
+
+$darkColorDarkTheme: hsl(207, 26%, 17%);
+$whiteColorDarkTheme: hsl(0, 0%, 100%);
+
+$backgroundDarkTheme: hsl(209, 23%, 22%);
+
+@media only screen and (max-width: 400px) { 
 .app{
     position: absolute;
     top: 0px;
@@ -12,13 +19,13 @@
 }
 
 .lightTheme{
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(200, 15%, 8%);
+    background-color: $whiteBackground;
+    color: $darkColor;
 }
 
 .darkTheme{
-    background-color: hsl(207, 26%, 17%);
-    color: hsl(0, 0%, 100%);
+    background-color: $darkColorDarkTheme;
+    color: $whiteColorDarkTheme;
 }
 
 .homepageHeader{
@@ -52,7 +59,6 @@
     right: 3%;
     font-weight: 600;
     display: inline;
-    cursor: pointer;
 }
 
 .countryCard{
@@ -73,7 +79,7 @@
 
 .darkCard{
     color: white;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
 
 .countryFlagImg{
@@ -174,11 +180,10 @@ select{
     color: white;
     margin-top: 5%;
     margin-left: 3%;
-    margin-bottom: 2%;
     padding: 4% 10% 4% 6%;
     border-color: white;
     border-radius: 3px;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
 
 .searchContainer {
@@ -203,7 +208,7 @@ select{
 .searchIconDark{
     width: 5%;
     padding: 2% 7%;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
   
 .searchBox {
@@ -213,11 +218,11 @@ select{
 }
 
 .searchBoxDark{
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
+    color:white;
     border: 0;
     padding: 5%;
     flex: 1;
-    color:white;
 }
   
 }
@@ -234,13 +239,13 @@ select{
 }
 
 .lightTheme{
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(200, 15%, 8%);
+    background-color: $whiteBackground;
+    color:$darkColor;
 }
 
 .darkTheme{
-    background-color: hsl(207, 26%, 17%);
-    color: hsl(0, 0%, 100%);
+    background-color: $darkColorDarkTheme;
+    color: $whiteColorDarkTheme;
 }
 
 .homepageHeader{
@@ -248,7 +253,7 @@ select{
     top: 0px;
     left: 0px;
     width: 94%;
-    padding: 5% 3%;
+    padding: 3%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -259,7 +264,7 @@ select{
 }
 
 .countryDetails{
-    margin-top: 15%;
+    margin-top: 22%;
 }
 
 .appTitle{
@@ -274,7 +279,6 @@ select{
     right: 3%;
     font-weight: 600;
     display: inline;
-    cursor: pointer;
 }
 
 .countryCard{
@@ -295,7 +299,7 @@ select{
 
 .darkCard{
     color: white;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
 
 .countryFlagImg{
@@ -384,7 +388,7 @@ select{
     padding: 1.5% 4% 1.5% 3%;
     border-color: white;
     background-color: white;
-    margin-top: -10%;
+    margin-top: -12%;
     border-radius: 3px;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -394,12 +398,12 @@ select{
 .selectDark{
     border-width: inherit;
     color: white;
-    margin-top: -10%;
+    margin-top: -12%;
     margin-left: 3%;
     padding: 1.5% 4% 1.5% 3%;
     border-color: white;
     border-radius: 3px;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
 
 .flexDesktop{
@@ -415,7 +419,7 @@ select{
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    width: 30%;
+    width: 45%;
     -webkit-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
     box-shadow: 0px 3px 20px 4px rgba(0,0,0,0.05);
@@ -431,7 +435,7 @@ select{
 .searchIconDark{
     width: 5%;
     padding: 2% 7%;
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
 }
   
 .searchBox {
@@ -441,11 +445,11 @@ select{
 }
 
 .searchBoxDark{
-    background-color: hsl(209, 23%, 22%);
+    background-color: $backgroundDarkTheme;
+    color: white;
     border: 0;
     padding: 5%;
     flex: 1;
-    color: white;
 }
 
 
@@ -499,15 +503,6 @@ select{
         padding: 1.5% 4% 1.5% 3%;
     }
 
-    .searchBoxDark{
-        padding: 5%;
-        color:white;
-    }
-
-    .searchIconDark{
-        padding: 2% 7%;
-    }
-
     .flexDesktop{
         margin: 0% 2%;
     }
@@ -532,7 +527,7 @@ select{
 
     .countryNameDetails{
         position: absolute;
-        top: 37%;
+        top: 30%;
         left: 52%;
         margin: 1%;
         font-size: xx-large;
@@ -548,20 +543,27 @@ select{
 
     .firstGroup{
         position: absolute;
-        top: 45%;
+        top: 39%;
         left: 53%;
+        font-size: large;
     }
 
     .secondGroup{
         position: absolute;
-        top: 45%;
-        right: 11%;
+        top: 39%;
+        right: 9%;
+        font-size: large;
     }
 
     .thirdGroup{
         position: absolute;
-        top: 71%;
+        top: 60%;
         left: 53%;
+        font-size: large;
+    }
+
+    .searchContainer{
+        width: 30%;
     }
 
 }

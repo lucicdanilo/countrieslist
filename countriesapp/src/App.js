@@ -4,7 +4,7 @@ import CountriesList from './components/CountriesList';
 import CountryDetails from './components/CountryDetails';
 import Moon from './icons/moon-regular.svg';
 import MoonDark from './icons/moon-solid.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
 
