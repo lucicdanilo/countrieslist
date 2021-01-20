@@ -456,10 +456,94 @@ select{
 }
 
 @media only screen and (min-width: 800px){
+    .app{
+        height: 100%;
+    }
+    
+    .appTitle{
+        font-size: x-large;
+    }
+
     .flexDesktop{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 0px 0px;
     }
+
+    .homepageHeader{
+        font-size: large;
+        padding: 2% 6%;
+        width: 88%;
+    }
+
+    .searchContainer{
+        margin: 4% 4% 2% 5%;
+    }
+
+    .moonIcon{
+        width: 13px;
+    }
+
+    select{
+        margin-top: -6%;
+
+    }
+
+    .flexDesktop{
+        margin: 0% 2%;
+    }
+
+    .themeChangeButton{
+        margin-right: 2%;
+    }
+
+    .backButton{
+        margin: 11% 6% 3% 6%;
+        padding: 0.5% 2%; 
+    }
+
+    .countryDetails{
+        margin-top: 9%;
+    }
+
+    .countryFlagImgDetails {
+        width: 35%;
+        margin-top: 2%;
+    }
+
+    .countryNameDetails{
+        position: absolute;
+        top: 37%;
+        left: 52%;
+        margin: 1%;
+        font-size: xx-large;
+    }
+
+    .groupDetails > div{
+        padding: 2% 0%;
+    }
+    
+    .groupDetails{
+        margin: 1% 0%;
+    }
+
+    .firstGroup{
+        position: absolute;
+        top: 45%;
+        left: 53%;
+    }
+
+    .secondGroup{
+        position: absolute;
+        top: 45%;
+        right: 11%;
+    }
+
+    .thirdGroup{
+        position: absolute;
+        top: 71%;
+        left: 53%;
+    }
+
 }
