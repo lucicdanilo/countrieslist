@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Switch, Route,BrowserRouter as Router } from 'react-router-dom';
 import CountriesList from './components/CountriesList';
 import CountryDetails from './components/CountryDetails';
-import './App.css';
 import Moon from './icons/moon-regular.svg';
 import MoonDark from './icons/moon-solid.svg';
+import './App.css';
 
 function App() {
 
